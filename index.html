@@ -25,19 +25,21 @@
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
 	<div class="text-center">
-	<h2>Speech Synthesis Model Training on Low-quality Data Using Noise-Robust Diffusion Autoencoders</h2>
+	<h2>Speech Synthesis with Low-quality Data Using Noise-Robust Diffusion Autoencoders</h2>
 		<br><br>
 	</div>
 	<p>
         <b>Abstract.</b> 
-		Speech synthesis models trained on a large amount of high-quality data have achieved human-like synthetic speech. 
-However, the quality of synthesized speech is highly correlated with the quality of training data. 
-Compared to high-quality data, low-quality data containing some noise is easier to collect in daily scenarios. 
-How to use low-quality data to train text-to-speech (TTS) model has become a hot and challenging topic. 
-In this study, we attempt to train diffusion models using low-quality data to learn robust representation. 
-Additionally, we propose a text-to-representation prediction module for a comprehensive end-to-end speech synthesis approach. 
-We conducted comprehensive subjective and objective evaluations through a series of experiments. 
-Compared with the SSL-based baseline, our model has been proven effective in terms of speech naturalness and similarity.</p>     
+		Speech synthesis models trained on massive data have achieved human-like synthetic speech, but the quality 
+		of synthesized speech is highly correlated with the quality of training data. Compared to high-quality ideal
+		 data recorded in professional studios, although low-quality data containing some noise is easier to collect 
+		 in daily scenarios, utilizing lowquality data to train speech synthesis models has still become challenging. 
+		 This paper proposes a training strategy for diffusion autoencoders that leverages low-quality data to obtain 
+		 noise-robust representations. Additionally, we build a text-torepresentation prediction module for a 
+		 comprehensive end-to-end speech synthesis approach. Experiments conducted on both simulated and real-world 
+		 noisy datasets demonstrate the noise robustness of the learned representations and the advantages of our 
+		 proposed model over baseline models in terms of the naturalness and similarity of synthesized audio when 
+		 using lowquality data.</p>     
 	  <p>This page is for <b>research demonstration purposes</b> only.</p>
 
 	<p>
@@ -62,10 +64,10 @@ Compared with the SSL-based baseline, our model has been proven effective in ter
 	</body>
 		<p>
 			<b>Figure.</b> 
-			The proposed TTS method: (a) Overview of the diffusion autoencoders, which consists of the feature 
-extractor and conditional Denoising Diffusion Implicit Model (DDIM). The dotted line stands for the training process, 
-and the solid line stands for the inference process. (b) In the inference stage, the tex2rep model converts text into 
-representation and conditional DDIM converts representation into mel-spectrogram, which is converted into speech through HiFi-GAN.
+			The proposed speech synthesis method: (a) Overview of the diffusion autoencoders, which consists of the feature extractor and conditional Denoising
+Diffusion Implicit Model (DDIM). The dotted line stands for the training process, and the solid line stands for the inference process. (b) In the inference stage,
+the tex2rep model converts text into representations and conditional DDIM converts representations into Mel-spectrogram, which is converted into speech
+through HiFi-GAN.
 		</p>
 </div>
 
